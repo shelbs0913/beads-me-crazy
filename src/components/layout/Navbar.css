@@ -1,0 +1,19 @@
+.navbar {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: purple;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: lightseagreen;
+    color: black;
+  }

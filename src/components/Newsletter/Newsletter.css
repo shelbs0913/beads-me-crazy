@@ -1,0 +1,10 @@
+.field-container {
+    margin: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 50 50 50;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: space-evenly;
+    height: 100px;
+    width: 100%;
+  }
