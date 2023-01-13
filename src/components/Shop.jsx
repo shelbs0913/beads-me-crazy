@@ -40,6 +40,8 @@ import vixen from '../assets/images/vixen.jpg';
 import wysteria from '../assets/images/wysteria.jpg';
 import yellowlotus from '../assets/images/yellowlotus.jpg';
 import ProductCard from './ProductCard';
+import Footer from './Footer/Footer';
+import "../index.css";
 
 export default function Shop() {
   return <>
@@ -75,7 +77,7 @@ export default function Shop() {
         <ProductCard imageurl={purpleprotection} name="Purple Protection" />
         <ProductCard imageurl={Queendom} name="Queendom" />
         <ProductCard imageurl={redlotus} name="Red Lotus Flower" />
-        <ProductCard imageurl={strawberrycream} name="Strawberry Creamr" />
+        <ProductCard imageurl={strawberrycream} name="Strawberry Cream" />
         <ProductCard imageurl={summerblues} name="Summer Blues" />
         <ProductCard imageurl={summerrays} name="Summer Rays" />
         <ProductCard imageurl={summershells} name="Summer Shells" />
@@ -88,6 +90,7 @@ export default function Shop() {
         <ProductCard imageurl={yellowlotus} name="Yellow Lotus Flower" />
      </div>
     </div>
+    <Footer />
       
 
   </>

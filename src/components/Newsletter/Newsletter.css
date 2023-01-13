@@ -1,10 +1,38 @@
+.container{
+  margin: 10px;
+  padding: 10px;
+}
+
 .field-container {
-    margin: 100px;
-    padding: 20px;
+    margin: 0px;
+    padding-right: 50px;
     display: grid;
     grid-template-rows: 50 50 50;
     grid-template-columns: 1fr 1fr 1fr;
     align-content: space-evenly;
     height: 100px;
     width: 100%;
+  }
+
+  .image{
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    background: url('../../assets/logo2.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+  }
+  
+  .image-overlay{
+    width: 2000px;
+    height: 2000px;
+    background-color: rgba(211, 211, 211, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    color: black;
+    letter-spacing: 5px;
+    font-size: 3rem;
   }

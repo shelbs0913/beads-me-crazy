@@ -1,0 +1,9 @@
+header h1 {
+    font-size: 70px;
+    font-weight: 600;
+    background-image: repeating-conic-gradient(#553c9a 0%, #553c9a 10%, 
+    #00c2cb 20%, #00c2cb 30%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }

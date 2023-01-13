@@ -1,19 +1,16 @@
 import React from "react";
-import "./Newsletter.css";
 import { TextField } from "@mui/material";
+import TextareaAutosize from "@mui/base/TextareaAutosize";
 import { Button } from "@mui/material";
 
-export default function Newsletter() {
+export default function Footer() {
   return (
     <>
       <div>
         <form action="/action_page.php">
           <div className="container">
-            <h1>Subscribe to our Newsletter</h1>
-            <p>
-              Get Monthly updates about upcoming Pop-Up Shops as well as random
-              facts about different stones.
-            </p>
+            <h1>Email Us</h1>
+            <p>Let us know if you don't see what you like on our site!!</p>
           </div>
           <div className="field-container">
             <TextField
@@ -31,20 +28,22 @@ export default function Newsletter() {
               label="Email Address"
               variant="outlined"
             />
+            <TextareaAutosize
+              maxRows={4}
+              aria-label="maximum height"
+              placeholder="Maximum 4 rows"
+              defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua."
+              style={{ width: 200 }}
+            />
           </div>
           <div className="container">
             <Button variant="contained" color="success">
-              Subscribe
+              Send
             </Button>
           </div>
         </form>
       </div>
-
-      <div className="image">
-        <div className="image-overlay"></div>
-      </div>
-
-      
     </>
   );
 }
