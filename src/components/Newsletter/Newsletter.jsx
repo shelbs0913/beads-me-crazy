@@ -1,9 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Newsletter.css";
 import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
+import axios from "axios";
 
 export default function Newsletter() {
+  
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+
+  function handleSubmit() {
+      const newContact = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email
+      }
+      axios.post("http://localhost:5000/newsletter", newContact).then (
+        (response) => {
+          console.log(response);
+        }
+      )
+      console.log(newContact);
+      
+  }
+
   return (
     <>
       <div>
@@ -20,31 +41,28 @@ export default function Newsletter() {
               id="outlined-basic"
               label="First Name"
               variant="outlined"
+              onChange={(e) => setFirstName(e.target.value)}
             />
             <TextField
               id="outlined-basic"
               label="Last Name"
               variant="outlined"
+              onChange={(e) => setLastName(e.target.value)}
             />
             <TextField
               id="outlined-basic"
               label="Email Address"
               variant="outlined"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="container">
-            <Button variant="contained" color="success">
+            <Button variant="contained" color="success" onClick={handleSubmit}>
               Subscribe
             </Button>
           </div>
         </form>
       </div>
-
-      <div className="image">
-        <div className="image-overlay"></div>
-      </div>
-
-      
     </>
   );
 }

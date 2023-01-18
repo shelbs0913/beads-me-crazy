@@ -10,12 +10,12 @@ export const cartAddReducer = (state = [], action) => {
 
             cartList.find(items => items.cartObject.name === action.payload.name)
 
-            cartList.forEach((element, index) => {
+            cartList.forEach((element, name) => {
                 if (element.name === action.payload.name) {
                     
                 }
                 
-                console.log(index); 
+                console.log(name); 
             })
 
             return [...state, 

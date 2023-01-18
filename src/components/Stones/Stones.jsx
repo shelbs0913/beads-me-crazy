@@ -1,4 +1,7 @@
 import React from "react";
+// import { Row, Col } from 'react-bootstrap';
+// import { crystalArray } from '../CrystalStore';
+// import CrystalsCard from '../CrystalsCard';
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -9,9 +12,7 @@ export default function Stones() {
   return (
     <div>
       <h1>Top 10 Crystals!!!!</h1>
-      <div className="image">
-        <div className="image-overlay"></div>
-      </div>
+
       <div className="grid-container">
         <Card sx={{ maxWidth: 375, margin: 2 }}>
           <CardMedia
